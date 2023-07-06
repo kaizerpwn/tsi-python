@@ -11,11 +11,11 @@ void main()
                  0,
                  1};
     int trojke;
-    for (int i = 0; i < 8; i++)
+    for (int i = 0; i < sizeof(niz) / sizeof(niz[0]); i++)
     {
-        for (int j = i + 1; j < 8; j++)
+        for (int j = i + 1; j < sizeof(niz) / sizeof(niz[0]); j++)
         {
-            for (int k = j + 1; k < 8; k++)
+            for (int k = j + 1; k < sizeof(niz) / sizeof(niz[0]); k++)
             {
                 if (niz[i] + niz[j] + niz[k] == 0)
                 {
